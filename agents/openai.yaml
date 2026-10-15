@@ -1,0 +1,4 @@
+interface:
+  display_name: "科学计算论文精读"
+  short_description: "按贡献解读数学、物理与并行论文，点明创新、更新对象、成本和适用边界"
+  default_prompt: "使用 $numerical-paper-reader 解读这篇论文，先点明核心创新，再按摘要与正文证据选择数学、物理或并行主线，解释具体改动、收益与条件。"
