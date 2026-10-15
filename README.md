@@ -1,6 +1,6 @@
 # numerical-paper-reader
 
-面向计算数学、数值分析、优化算法与科学计算论文的 Codex skill。先解释最有用的核心，再展开数学结构、计算成本、DAG、并行通信和复现条件。
+面向计算数学、优化、计算物理与并行/分布式论文的 Codex skill。先点明具体创新，再依据摘要和正文中的贡献证据选择阅读主线，按需解释数学对象、公式与算法、成本、物理意义或分块/调度/通信。
 
 An evidence-oriented paper-reading skill for numerical mathematics, optimization, and scientific computing. Chinese instructions; responses follow the user's language.
 
@@ -32,7 +32,9 @@ $numerical-paper-reader 精读这篇论文：[论文链接或本地文件]。
 
 ## 评估与边界
 
-当前发布修订版 v2。一次受控评估包含 20 篇论文的无 skill / v1 配对解读，以及 10 篇留出论文的 v1 / v2 比较。结果支持更完整的成本、并行性和复现准备分析，但**不能证明真实读者理解更快，或完整实验复现成功率更高**。
+当前文件为修订版 v3：新增基于贡献证据的主辅线判断，以及数学、物理、并行三个独立提示模块；不按 arXiv 分区或期刊强制分类。设计参考了七种语言的阅读教程及跨领域原始论文，详见 [v3 依据](references/research-basis-v3.md)。六篇设计内论文与摘要场景的行为抽查不构成效果对照试验。
+
+历史受控评估针对 v1/v2：20 篇论文的无 skill / v1 配对解读，以及 10 篇留出论文的 v1 / v2 比较。它支持更完整的成本、并行性和复现准备分析，但**不能证明真实读者理解更快，或完整实验复现成功率更高，也不能将其分数归给 v3**。
 
 见 [评估摘要](benchmark/README.md)和[评分标准](benchmark/rubric.json)。模型仍可能误读符号、实验数值和实现条件；研究结论须回到原文核查。
 
