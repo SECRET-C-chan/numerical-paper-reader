@@ -1,6 +1,6 @@
 # numerical-paper-reader
 
-面向计算数学、优化、计算物理与并行/分布式论文的 Codex skill。先点明具体创新，再依据摘要和正文中的贡献证据选择阅读主线，按需解释数学对象、公式与算法、成本、物理意义或分块/调度/通信。
+面向计算数学、优化、计算物理与并行/分布式计算论文的 Codex skill。先点明具体创新，再依据摘要和正文中的贡献证据选择阅读主线，按需解释数学对象、公式与算法、成本、物理意义或分块/调度/通信。
 
 An evidence-oriented paper-reading skill for numerical mathematics, optimization, and scientific computing. Chinese instructions; responses follow the user's language.
 
@@ -10,7 +10,7 @@ An evidence-oriented paper-reading skill for numerical mathematics, optimization
 - 算法状态、关键更新、一轮流程、终止条件，以及相对基线究竟改了哪一步。
 - 数学结构、证明条件、误差与数值稳定性。
 - 每步和总计算量、存储、达到目标精度的成本。
-- 计算 DAG、work/span、同步、数据布局、通信轮数和数据量。
+- 计算图、work/span、同步、数据布局、通信轮数和数据量。
 - 实验公平性、最小验证，以及从原型到论文实验的复现缺口。
 
 覆盖 arXiv、数学期刊、算法会议、JCTC、CPC 等来源；按论文贡献选择模块，不把期刊标签当成分析结论。
@@ -21,7 +21,7 @@ An evidence-oriented paper-reading skill for numerical mathematics, optimization
 
 ```text
 $numerical-paper-reader 精读这篇论文：[论文链接或本地文件]。
-先让我快速理解问题、核心算法和相对基线的改进，再分析复杂度、DAG、分布式通信及最小复现方案。
+先让我快速理解问题、核心算法和相对基线的改进，再分析复杂度、计算图、分布式通信及最小复现方案。
 ```
 
 也可以把完整目录交给其他能读取文件的 agent，要求先读 `SKILL.md` 并按需读取参考文件。只复制入口文本会丢失详细分析模块。此项目是阅读指令与参考材料，不包含论文下载器或自动执行实验的程序。
