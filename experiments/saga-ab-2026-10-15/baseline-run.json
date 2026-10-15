@@ -1,0 +1,20 @@
+{
+  "report_file": "baseline.md",
+  "paper_materials_read": [
+    "inputs/paper.txt",
+    "inputs/paper.pdf"
+  ],
+  "paper_text_pages_read": "PDF pages 1-15",
+  "paper_sections_read": [
+    "Abstract",
+    "Sections 1-6",
+    "References",
+    "Appendices A-D"
+  ],
+  "pdf_checked": true,
+  "pdf_pages_checked": [2, 8, 11, 12],
+  "network_used": false,
+  "loaded_skill_files": [],
+  "material_limits": "Only inputs/paper.pdf and inputs/paper.txt were used for paper content; cited external works and dataset details were not consulted; no paper experiment or code was run.",
+  "completed": true
+}

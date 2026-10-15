@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "paper": {
+    "title": "SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives",
+    "authors": [
+      "Aaron Defazio",
+      "Francis Bach",
+      "Simon Lacoste-Julien"
+    ],
+    "version": "arXiv:1407.0202v3",
+    "url": "https://arxiv.org/abs/1407.0202v3",
+    "pdf_sha256": "b0177cd77447c7469ca31bdfbe7773f604320a9878a46b777c899d9b6fc37c7e",
+    "extracted_text_sha256": "980badc4b44461d3b58207516ee6508fa9d9163c1a4029a50aacd9d3ff6b0bd8",
+    "pages": 15,
+    "selection": "Convenience choice, not random sampling; unrelated to PWDFT/DGDFT/ISDF/CDFCI. Used in an older v1/v2 corpus, but neither agent receives any earlier interpretation or score."
+  },
+  "common_prompt_sha256": "1c84cb198e3d655ee9f8adf50d36ecf48b5ca6e25a06099ac891e836f663f0ba",
+  "conditions": [
+    {
+      "name": "baseline",
+      "requested_model": "gpt-6-sol",
+      "requested_reasoning_effort": "high",
+      "fork_turns": "none",
+      "skill_body": "not loaded",
+      "report": "baseline.md",
+      "agent_task": "saga_baseline"
+    },
+    {
+      "name": "with-skill",
+      "requested_model": "gpt-6-sol",
+      "requested_reasoning_effort": "high",
+      "fork_turns": "none",
+      "skill_body": "frozen numerical-paper-reader v3, references loaded on demand",
+      "report": "with-skill.md",
+      "agent_task": "saga_with_skill"
+    }
+  ],
+  "shared_controls": {
+    "source": "identical PDF and extracted full text",
+    "task": "identical common-prompt.txt",
+    "length": "soft target 2500–4000 Chinese characters plus formulas/tables/pseudocode",
+    "network": "disallowed by task instructions",
+    "other_reports": "disallowed by task instructions",
+    "code_execution": "no paper experiments; parsing the provided PDF allowed",
+    "human_editing": "none to report content",
+    "sampling": "one generation per condition; no seed control; no reranking or best-of selection"
+  },
+  "isolation_limits": "Fresh task contexts do not remove shared host system rules, tool schemas, skill catalog metadata, pretrained knowledge, or filesystem visibility. No-skill means no skill body/reference loading by instruction. This is not a model finetuning or hermetic sandbox experiment. Agent self-reports are retained, not presented as an independent security audit.",
+  "skill_snapshot": {
+    "repository": "https://github.com/SECRET-C-chan/numerical-paper-reader",
+    "commit": "6e1d8b1c8a722540229ee501362fa62b1b2e616f",
+    "files_sha256": {
+      "agents/openai.yaml": "65343d7f6f6943c8409ab4e4961019e457ee1bae90fd087819b1bd26d6bd90a5",
+      "references/complexity-dag-communication.md": "114f3242eae530dfa4308b56b7cb7f6ff3b9ae7dfe9aa01578cdfc4b9f052a50",
+      "references/computational-physics.md": "0622318ca71c028b5f5e8b9b40129c3b176fac00415f54f9218e2616de907e9a",
+      "references/contribution-routing.md": "64f80761833f4f50d211b5f3383ccafac9974756817070fffd37e20b605d6b85",
+      "references/experiments-and-reproduction.md": "263596dc6da51e6e0c27e7192cb2ce8611402d6b3e6c668184e6f2b5f7714e00",
+      "references/mathematics-and-optimization.md": "e6a20a6abcf310b6523de95614ae4968e5c19e8fe86e9ed23a43b9b80aa29e9b",
+      "references/output-and-comparison.md": "dabd41721c7c33b9fdd1090ae7e89da9bb0cb172ba5c161fffccb06bff9cdcdd",
+      "references/parallel-and-distributed.md": "5a0e01f102f112eee84fca18bbb356d6dd251ad697a33e21b21797cff6ee51bb",
+      "references/research-basis-v3.md": "cb8de1bdc4902cee910e6414317ea4208b5d604b6434e0ce594a3b98714f541e",
+      "references/sources-and-design.md": "d842928d9d7f202301bbe607f6e8780d4f4646a6cd0fd8930ca96e62427da6b6",
+      "references/theory-and-numerics.md": "75655bc41f81122002504c7a9c6710d30095845bb6743cb0bdb200ab1c3af7e3",
+      "references/venues-and-structure.md": "95116b389f5687b77b6efff17f4ce8b06487337a690c27f93e9d4994e1e79112",
+      "SKILL.md": "92675e291ad01a91b257bb012cd269891341ec716da0158f2b9cd7df6e97df23"
+    }
+  },
+  "interpretation": "A single illustrative pair cannot establish a general improvement, human reading speed, or reproduction success. No score is assigned in this experiment.",
+  "publication": "Complete agent-authored reports, prompt and setup; source PDF/text and private execution logs are not redistributed."
+}

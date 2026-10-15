@@ -1,0 +1,46 @@
+{
+  "reports": [
+    {
+      "condition": "baseline",
+      "report": "baseline.md",
+      "sha256": "60f3c302450b3bb0449db552c15f8a8009be8d721ec44eddc576f912c3969421",
+      "utf8_bytes": 11021,
+      "unicode_characters": 5361,
+      "han_characters": 2504,
+      "headings": [
+        "SAGA：用逐项更新的梯度记忆消除随机梯度噪声",
+        "问题与核心贡献",
+        "算法到底记住了什么",
+        "理论结论与其含义",
+        "与相邻方法和实际选择",
+        "实验读到了什么，尚不能推出什么"
+      ],
+      "declared_loaded_skill_files": []
+    },
+    {
+      "condition": "with-skill",
+      "report": "with-skill.md",
+      "sha256": "b37fe3f2031f6274058f13a37733adadf09c171024ccb5611bfca22f7c51899d",
+      "utf8_bytes": 10633,
+      "unicode_characters": 5375,
+      "han_characters": 2343,
+      "headings": [
+        "SAGA：用逐项更新的梯度表消除随机梯度的持久噪声\r",
+        "问题与为什么需要梯度表\r",
+        "它与相邻方法究竟差在哪一步\r",
+        "保证、条件与证明抓手\r",
+        "计算代价与论文中的实证\r",
+        "阅读判断与范围\r"
+      ],
+      "declared_loaded_skill_files": [
+        "skill/SKILL.md",
+        "skill/references/contribution-routing.md",
+        "skill/references/mathematics-and-optimization.md",
+        "skill/references/theory-and-numerics.md",
+        "skill/references/experiments-and-reproduction.md"
+      ]
+    }
+  ],
+  "counts_note": "Unicode and Han character counts include headings and other text; neither is a token count or reading-time measure. Reports are unedited.",
+  "rating": null
+}

@@ -1,0 +1,7 @@
+请用中文完整解读 Aaron Defazio、Francis Bach、Simon Lacoste-Julien 的论文《SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives》，版本 arXiv:1407.0202v3。
+
+读者有基础线性代数、微积分和优化知识，但没有读过本文。希望通过这份独立报告理解论文的核心思想、方法与结论，并判断是否值得精读或尝试实现。请自行安排结构，不只翻译摘要。建议正文约 2500–4000 中文字，可加必要公式、表格和伪代码；这是软目标，重要内容完整优先。给出具体原文位置以便回查，说明实际阅读范围和无法核实的内容。使用原创解释，避免长段直接引用。
+
+材料：inputs/paper.pdf 为论文 PDF，inputs/paper.txt 为同版本全文提取文本（含 PDF 页码）。文本可能存在空格或公式提取问题，必要时可检查同一 PDF。只能使用这两份论文材料，不联网，不搜索或读取旧解读、其他代理输出、既有 benchmark、聊天记录及其他论文。不执行实验或论文代码，不将未运行的内容写成已复现。
+
+最终只生成一份完整 Markdown 解读报告。不要为了预期实验结果刻意展示优缺点，也不要在报告中评价 skill。除读取分组允许的 skill 文件这一差异外，遵守相同的材料、篇幅和工具约束。
